@@ -1,6 +1,10 @@
 import numpy as np
 import pymeshlab as pml
 
+pml.PercentageValue = pml.Percentage
+pml.PureValue = pml.AbsoluteValue
+
+
 def poisson_mesh_reconstruction(points, normals=None):
     # points/normals: [N, 3] np.ndarray
 
